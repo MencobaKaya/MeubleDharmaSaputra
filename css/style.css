@@ -40,6 +40,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -49,6 +51,8 @@ body {
     line-height: 1.8;
     overflow-x: hidden;
     font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -1853,29 +1857,33 @@ ul {
 }
 
 .preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .preloader-logo {
-    width: 120px;
-    height: auto;
+    width: 160px;
+    height: 160px;
     border-radius: 12px;
-    margin-bottom: 24px;
-    animation: preloaderPulse 1.5s ease-in-out infinite;
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+    margin-bottom: 28px;
+    animation: preloaderPulse 2s ease-in-out infinite;
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.3);
+    object-fit: cover;
 }
 
 @keyframes preloaderPulse {
-    0%, 100% { transform: scale(1); opacity: 0.9; }
-    50% { transform: scale(1.05); opacity: 1; }
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.06); opacity: 1; }
 }
 
 .preloader-bar {
-    width: 200px;
-    height: 3px;
+    width: 220px;
+    height: 4px;
     background: rgba(255,255,255,0.1);
     border-radius: 2px;
-    margin: 0 auto 16px;
+    margin: 0 auto 20px;
     overflow: hidden;
 }
 
@@ -1897,8 +1905,8 @@ ul {
     font-family: var(--font-classic);
     font-style: italic;
     color: rgba(255,255,255,0.4);
-    font-size: 0.95rem;
-    letter-spacing: 3px;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
 }
 
 /* ===== LOGO ===== */
